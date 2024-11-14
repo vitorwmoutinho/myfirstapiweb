@@ -29,4 +29,8 @@ public class UsuarioContoller {
     public void postUser(Usuario usuario){
         repository.save(usuario);
     }
+    @PutMapping()
+    public void putUser(@RequestBody Usuario usuario){
+        repository.save(usuario);
+    }
 }
